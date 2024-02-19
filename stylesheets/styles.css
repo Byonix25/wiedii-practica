@@ -1,13 +1,25 @@
+:root{
+    --blanco:#FFFFFF;
+    --negro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --fuente-principal:3.8rem;
+}
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;/* 1 rem = 10px */
 }
 body{
     font-size: 16px;/* 1 rem = 10px */
+    font-family: "Montserrat", sans-serif;
 }
-h1 {
+.titulo {
+    font-size: var(--fuente-principal);
     text-align: center;
-    color: red; 
+    color: var(--primario); 
+
 }
-span{
-    font-size: 20px;
+.titulo span{
+    font-size: 2rem;
+    color: var();
 }
