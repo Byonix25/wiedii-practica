@@ -17,7 +17,14 @@ body{
     font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to top, #949494 0%, var(--blanco) 100%);
 }
-
+.shadow{
+    -webkit-box-shadow:0px 5px 15px 0px rgba(112,112,112, 0.54);
+    -moz-box-shadow:0px 5px 15px 0px rgba(112,112,112, 0.54);
+    box-shadow:0px 5px 15px 0px rgba(112,112,112, 0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
 h1{
     font-size: 3.8rem;
 }
@@ -89,6 +96,7 @@ h1,h2,h3{
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 .hero-content{
     position: absolute;
@@ -103,4 +111,30 @@ h1,h2,h3{
 .hero-content h2,
 .hero-content p{
     color: var(--blanco);
+}
+@media (min-width: 768px) {
+    .services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+.service{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service h3{
+    color: var(--secundario)
+}
+.service p{
+    line-height: 2;
+}
+.service .div-icon{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
