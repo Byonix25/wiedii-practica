@@ -4,7 +4,7 @@
     --primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
-    --fuente-principal:3.8rem;
+    --size-fuente-principal:3.8rem;
 }
 html{
     font-size: 62.5%;/* 1 rem = 10px */
@@ -13,13 +13,36 @@ body{
     font-size: 16px;/* 1 rem = 10px */
     font-family: "Montserrat", sans-serif;
 }
-.titulo {
-    font-size: var(--fuente-principal);
+
+.title {
+    font-size: var(--size-fuente-principal);
     text-align: center;
     color: var(--primario); 
-
 }
-.titulo span{
+.title span{
     font-size: 2rem;
     color: var();
+}
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
+    
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav a{
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-nav a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
 }
